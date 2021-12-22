@@ -10,7 +10,7 @@ using WeeklyS.Database;
 namespace WeeklyS.Database.Migrations
 {
     [DbContext(typeof(WeeklySDbContext))]
-    [Migration("20211221165457_InitialMigration")]
+    [Migration("20211221171850_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -12,12 +12,6 @@ namespace WeeklyS.Database
     {
         DbSet<User> Users { get; set; }
         DbSet<WTask> WTasks { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            options.UseSqlServer("Server=A5\\SQLEXPRESS;Database=weeklyS;Trusted_Connection=True;");
-
-            base.OnConfiguring(options);
-        }
+        public WeeklySDbContext(DbContextOptions options) : base(options) { }
     }
 }

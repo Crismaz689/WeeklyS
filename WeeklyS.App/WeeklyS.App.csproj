@@ -4,10 +4,24 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>UI\Resources\Icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="UI\Resources\Icon.ico" />
+    <None Remove="UI\Resources\LogoTop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UI\Fonts\" />
+    <Folder Include="UI\Images\" />
+    <Folder Include="UI\Theme\" />
     <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UI\Resources\Icon.ico" />
+    <Resource Include="UI\Resources\LogoTop.png" />
   </ItemGroup>
 
 </Project>
